@@ -1,0 +1,197 @@
+/*
+** Idées de couleur :
+#db5855
+#384d54
+#ba595e
+*/
+
+
+
+/*
+** GENERAL
+*/
+
+*, *:after, *:before {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.4rem;
+  font-family: 'Roboto', sans-serif;
+}
+
+.wrapper {
+  width: 65%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+/*
+** HEADER
+*/
+
+
+header {
+  width: 100%;
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 5rem;
+}
+
+header > img {
+  width: 18%;
+}
+
+
+header > ul {
+  width: 30%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+a, a:visited {
+  color: #222222;
+}
+
+a:hover {
+  color: #22222;
+}
+
+
+
+/*
+** INTRODUCTION
+*/
+
+#introduction > img {
+  width: 100%;
+}
+
+#introduction > h2 {
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 3rem;
+}
+
+
+/*
+** PROJECT
+*/
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content:  flex-start;
+}
+
+
+article {
+  width: 31%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); /* Ombre */
+  transition: 0.3s;
+  border-radius: 5px;
+  margin-bottom: 3rem;
+
+}
+
+
+
+article > img {
+  width: 100%;
+  height: 19rem;
+  border-radius: 5px 5px 0 0;
+}
+
+
+article > h3 {
+  width: 85%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 2.5rem;
+
+  text-align: center;
+  font-size: 1.8rem;
+  font-family: 'Playfair Display SC', serif;
+}
+
+.divider {
+  background: #7A7A7A;
+  height: 2px;
+  margin: 20px auto;
+  width: 40px;
+}
+
+article > p {
+  color: #7A7A7A;
+  font-weight: lighter;
+  text-align: justify;
+
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  padding-bottom: 2rem;
+}
+
+
+/*
+** BADGE
+*/
+
+.badge {
+  display: flex;
+  justify-content: flex-start;
+  padding-bottom: 2rem;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.badge > li {
+  color: white;
+  padding: 0.4rem 1.2rem;
+  border-radius: 2rem;
+  margin-right: 1.4rem;
+}
+
+.rust {
+  background-color: #dea584;
+}
+
+.python {
+  background-color: #3572A5;
+}
+
+.sql {
+  background-color: #499886;
+}
+
+.reseau {
+  background-color: #384d54;
+}
+
+.universite {
+  background-color: #ba595e;
+}
+
+.js {
+  background-color: #f3ca0a;
+}
+
+.css {
+  background-color: #563d7c;
+}
+
+.html {
+  background-color: #e34c26;
+}
