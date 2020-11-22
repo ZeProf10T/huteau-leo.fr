@@ -219,8 +219,8 @@ article > p {
   z-index: 1000;
   top: 18px;
   right: 10px;
-  width: 40px;
-  height: 42px;
+  width: 12vw;
+  height: 12vw;
   border: none;
   cursor: pointer;
   background-color: transparent;
@@ -273,7 +273,7 @@ article > p {
   border-bottom: 2px solid black;
   text-decoration: none;
   font-family: 'Open Sans', sans-serif;
-  font-size: 1.2rem;
+  font-size: 2.4rem;
 }
 
 .navbar ul li a:hover, .navbar ul li a:focus {
