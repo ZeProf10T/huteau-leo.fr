@@ -217,8 +217,8 @@ article > p {
   position: relative;
   /* always keep ham on top of everything */
   z-index: 1000;
-  top: 18px;
-  right: 10px;
+  top: 2.5rem;
+  right: 1.4rem;
   width: 12vw;
   height: 12vw;
   border: none;
@@ -291,6 +291,10 @@ article > p {
 
 
 @media screen and  (orientation: portrait){
+  main {
+    align-items: baseline;
+  }
+
   header {
     padding-bottom: 2rem;
   }
