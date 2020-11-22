@@ -292,12 +292,20 @@ article > p {
 
 
 @media screen and  (orientation: portrait){
+  article {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); /* Ombre */
+    transition: 0.3s;
+    border-radius: 16px;
+    margin-bottom: 6rem;
+
+  }
+
   .divider {
     width: 14vw;
   }
 
   .badge > li {
-      font-size: 3.4vw;
+      font-size: 1.8vh;
   }
 
 
