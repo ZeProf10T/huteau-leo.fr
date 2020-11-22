@@ -297,8 +297,7 @@ article > p {
   }
 
   .badge > li {
-      height: 5.4vw;
-      font-size: 3.2vw;
+      font-size: 3.4vw;
   }
 
 
@@ -307,7 +306,7 @@ article > p {
   }
 
   article > p {
-    font-size: 3vw;
+    font-size: 3.2vw;
   }
 
   main {
