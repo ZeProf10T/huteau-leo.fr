@@ -290,7 +290,7 @@ article > p {
 }
 
 
-@media screen and (max-width: 992px) {
+@media screen and  (orientation: portrait){
   header {
     padding-bottom: 2rem;
   }
