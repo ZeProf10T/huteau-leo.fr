@@ -295,6 +295,10 @@ article > p {
     padding-bottom: 2rem;
   }
 
+  article {
+    width: 100%;
+  }
+
   .ham {
     display: block;
   }
