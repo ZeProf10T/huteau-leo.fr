@@ -6,6 +6,9 @@
 */
 
 
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+
 
 /*
 ** GENERAL
@@ -21,14 +24,16 @@ html {
 
 body {
   font-size: 1.4rem;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Raleway', sans-serif;
 }
 
 .wrapper {
-  width: 65%;
+  width: 67%;
   margin-left: auto;
   margin-right: auto;
 }
+
+
 
 
 /*
@@ -70,6 +75,7 @@ a:hover {
 
 
 
+
 /*
 ** INTRODUCTION
 */
@@ -79,7 +85,7 @@ a:hover {
 }
 
 #introduction > h2 {
-  font-family: 'Fira Sans', sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-size: 3rem;
 }
 
@@ -97,7 +103,7 @@ main {
 
 
 article {
-  width: 31%;
+  width: 340px;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); /* Ombre */
   transition: 0.3s;
   border-radius: 5px;
@@ -122,7 +128,7 @@ article > h3 {
 
   text-align: center;
   font-size: 1.8rem;
-  font-family: 'Playfair Display SC', serif;
+  font-family: 'Raleway', sans-serif;
 }
 
 .divider {
@@ -194,4 +200,113 @@ article > p {
 
 .html {
   background-color: #e34c26;
+}
+
+
+/*
+** HAMBURGER
+*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* border: 1px solid red; */
+}
+
+.ham {
+  position: relative;
+  /* always keep ham on top of everything */
+  z-index: 1000;
+  top: 20px;
+  right: 5px;
+  width: 36px;
+  height: 36px;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  background-image: url("https://ljc-dev.github.io/testing0/ham.svg");
+  background-size: 100%;
+}
+
+
+/* change ham image to close */
+.showClose {
+  background-image: url("https://ljc-dev.github.io/testing0/ham-close.svg");
+}
+
+.navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: black;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  color: white;
+  /* hide the menu above the screen by default */
+  transform: translateY(-100%);
+  /* transition adds a little animation when sliding in and out the menu */
+  transition: transform 0.2s ease;
+}
+
+
+.showNav {
+  /* show the menu */
+  transform: translateY(0);
+}
+
+/* basic nav styling below */
+
+.navbar ul {
+  width: 100%;
+  height: 100%;
+  list-style: none;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.navbar ul li a {
+  color: white;
+  padding-bottom: 10px;
+  border-bottom: 2px solid black;
+  text-decoration: none;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.2rem;
+}
+
+.navbar ul li a:hover, .navbar ul li a:focus {
+  border-bottom: 2px solid white;
+}
+
+
+/*
+** Mobile design
+*/
+
+.ham {
+  display: none;
+}
+
+
+@media screen and (max-width: 640px) {
+  .ham {
+    display: block;
+  }
+
+
+  .wrapper {
+    width: 88%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  header > img {
+      width: 50%;
+  }
 }

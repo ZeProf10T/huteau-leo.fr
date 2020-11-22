@@ -5,23 +5,28 @@
     <title>Léo Huteau</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/main.css">
-    <link href="https://fonts.googleapis.com/css2?family=Open-Sanso&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Fira-sans&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC&display=swap" rel="stylesheet">
   </head>
   <body>
     <div class="wrapper">
 
     <header>
 
-        <img alt="Huteau Léo" src="images/logo.png"> </img>
+        <img class="logo" alt="Huteau Léo" src="images/logo.png"> </img>
 
-        <ul>
-          <li><a href="#introduction">Présentation</a></li>
-          <li><a href="#projets">Projet</a></li>
-          <li><a href="#photographie">Photographie</a></li>
+        <button class="ham"></button>
+        <nav class="navbar">
+        <ul class="menu">
+          <li><a class="menuLink" href="#introduction">Home</a></li>
+          <li><a class="menuLink" href="#projets">Projet</a></li>
+          <li><a class="menuLink" href="photographie">Photographie</a></li>
         </ul>
+      </nav>
 
+      <ul class="menu">
+        <li><a href="#introduction">Home</a></li>
+        <li><a href="#projets">Projet</a></li>
+        <li><a href="photographie">Photographie</a></li>
+      </ul>
     </header>
 
 <!--
@@ -129,14 +134,17 @@
 
       </article>
 
-
-
-
-
     </main>
 
-
+    <template>
+      <li>
+        <img alt="" loading="lazy">
+      </li>
+    </template>
 
     </div>
+
   </body>
 </html>
+
+<script src="js/main.js"></script>
